@@ -1,86 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Christian Code Challenge</title>
-  </head>
-  <body>
-    <h1 id="christian-lirette-code-challenge">
-      Christian Lirette Code Challenge
-    </h1>
-    <p>
-      Great job on your project, Christian. Since we were not able to sync up
-      and review your project together, we want to give you the opportunity to
-      demonstrate your understanding of JavaScript in an asynchronous code
-      challenge as an alternative to the Project Review. You will have 24 hours
-      after acknowledging the receipt of this code challenge to complete and
-      submit it. By reading this message, you are acknowledging that you have
-      received these instructions and should begin working as soon as possible.
-    </p>
-    <h2 id="getting-started">Getting started</h2>
-    <ol type="1">
-      <li>
-        <p>Read <em>all</em> of the instructions carefully.</p>
-      </li>
-      <li>
-        <p>
-          Fork and clone the following repository onto your local machine:
-          <a href="https://github.com/thompsonplyler/basic-html-project"
-            >Repo Link</a
-          >
-        </p>
-      </li>
-    </ol>
-    <h2 id="once-you-have-finished">Once you have finished</h2>
-    <p>
-      Commit and push your changes to your fork like you would after completing
-      a lab using the following commands in the code challenge directory:
-    </p>
-    <ul>
-      <li><code>git add .</code></li>
-      <li><code>git commit -m "Completed assignment"</code></li>
-      <li><code>git push</code></li>
-    </ul>
-    <h2 id="goal-of-this-challenge">Goal of This Challenge</h2>
-    <p>
-      Filter the (supplied) Pokemon array and log the results in the browser’s
-      console. (You will <strong>NOT</strong> need to render the results to the
-      DOM)
-    </p>
-    <h2 id="deliverables">Deliverables</h2>
-    <ol type="1">
-      <li>
-        <p>
-          As a user, I should be able to select a Pokemon type from a drop down
-          list. (code supplied below)
-        </p>
-      </li>
-      <li>
-        <p>
-          As a user, I should see a log in the browser’s console of an array
-          containing only Pokemon objects that match the selection from the
-          dropdown. For example, if the ‘grass’ type Pokemon is selected in the
-          dropdown, I should only see grass type Pokemon objects in the array
-          logged in the browser’s console. Ex:
-          <code
-            >[{"name": "ivysaur","type": "grass"}, {"name": "bulbasaur","type":
-            "grass"}]</code
-          >
-        </p>
-      </li>
-      <li>
-        <p>
-          Copy the following code below in your code challenge’s JavaScript file
-          to get started (See starter code below):
-        </p>
-      </li>
-    </ol>
-    <div class="sourceCode" id="cb1">
-      <pre
-        class="sourceCode javascript"
-      ><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> pokeTypes <span class="op">=</span> [</span>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Christian Code Challenge</title>
+</head>
+
+<body>
+  <h1 id="christian-lirette-code-challenge">
+    Christian Lirette Code Challenge
+  </h1>
+  <p>
+    Great job on your project, Christian. Since we were not able to sync up
+    and review your project together, we want to give you the opportunity to
+    demonstrate your understanding of JavaScript in an asynchronous code
+    challenge as an alternative to the Project Review. You will have 24 hours
+    after acknowledging the receipt of this code challenge to complete and
+    submit it. By reading this message, you are acknowledging that you have
+    received these instructions and should begin working as soon as possible.
+  </p>
+  <h2 id="getting-started">Getting started</h2>
+  <ol type="1">
+    <li>
+      <p>Read <em>all</em> of the instructions carefully.</p>
+    </li>
+    <li>
+      <p>
+        Fork and clone the following repository onto your local machine:
+        <a href="https://github.com/thompsonplyler/basic-html-project">Repo Link</a>
+      </p>
+    </li>
+  </ol>
+  <h2 id="once-you-have-finished">Once you have finished</h2>
+  <p>
+    Commit and push your changes to your fork like you would after completing
+    a lab using the following commands in the code challenge directory:
+  </p>
+  <ul>
+    <li><code>git add .</code></li>
+    <li><code>git commit -m "Completed assignment"</code></li>
+    <li><code>git push</code></li>
+  </ul>
+  <h2 id="goal-of-this-challenge">Goal of This Challenge</h2>
+  <p>
+    Filter the (supplied) Pokemon array and log the results in the browser’s
+    console. (You will <strong>NOT</strong> need to render the results to the
+    DOM)
+  </p>
+  <h2 id="deliverables">Deliverables</h2>
+  <ol type="1">
+    <li>
+      <p>
+        As a user, I should be able to select a Pokemon type from a drop down
+        list. (code supplied below)
+      </p>
+    </li>
+    <li>
+      <p>
+        As a user, I should see a log in the browser’s console of an array
+        containing only Pokemon objects that match the selection from the
+        dropdown. For example, if the ‘grass’ type Pokemon is selected in the
+        dropdown, I should only see grass type Pokemon objects in the array
+        logged in the browser’s console. Ex:
+        <code>[{"name": "ivysaur","type": "grass"}, {"name": "bulbasaur","type":
+            "grass"}]</code>
+      </p>
+    </li>
+    <li>
+      <p>
+        Copy the following code below in your code challenge’s JavaScript file
+        to get started (See starter code below):
+      </p>
+    </li>
+  </ol>
+  <div class="sourceCode" id="cb1">
+    <pre
+      class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> pokeTypes <span class="op">=</span> [</span>
         <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;normal&quot;</span><span class="op">,</span></span>
         <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;fighting&quot;</span><span class="op">,</span></span>
         <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;poison&quot;</span><span class="op">,</span></span>
@@ -113,17 +110,16 @@
         <span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>})<span class="op">;</span></span>
         <span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
         <span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="bu">document</span><span class="op">.</span><span class="at">body</span><span class="op">.</span><span class="fu">append</span>(dropDown)<span class="op">;</span></span></code></pre>
-    </div>
-    <ol start="4" type="1">
-      <li>
-        Copy and paste the following array of Pokemon objects into your
-        JavaScript file as well. This is the array that you will be filtering.
-      </li>
-    </ol>
-    <div class="sourceCode" id="cb2">
-      <pre
-        class="sourceCode javascript"
-      ><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> pokemon <span class="op">=</span> [</span>
+  </div>
+  <ol start="4" type="1">
+    <li>
+      Copy and paste the following array of Pokemon objects into your
+      JavaScript file as well. This is the array that you will be filtering.
+    </li>
+  </ol>
+  <div class="sourceCode" id="cb2">
+    <pre
+      class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> pokemon <span class="op">=</span> [</span>
         <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  {</span>
         <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">name</span><span class="op">:</span> <span class="st">&quot;ivysaur&quot;</span><span class="op">,</span></span>
         <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">abilities</span><span class="op">:</span> [<span class="st">&quot;overgrow&quot;</span><span class="op">,</span> <span class="st">&quot;chlorophyll&quot;</span>]<span class="op">,</span></span>
@@ -467,19 +463,20 @@
         <span id="cb2-342"><a href="#cb2-342" aria-hidden="true" tabindex="-1"></a>    <span class="dt">id</span><span class="op">:</span> <span class="dv">57</span><span class="op">,</span></span>
         <span id="cb2-343"><a href="#cb2-343" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
         <span id="cb2-344"><a href="#cb2-344" aria-hidden="true" tabindex="-1"></a>]<span class="op">;</span></span></code></pre>
-    </div>
-    <script>
-        console.log("Reached the code... sending fetch...")
-        fetch("https://dev--code-challenge-receipt.thompson-plyler.autocode.gg/", {
-            method: "post",
-            headers: {
-                "Content-Type": 'application/json',
-                "Accepts": 'application/json'
-            },
-            body: JSON.stringify({ title: "Test for Assignment", subject: "Luis Jopa's Assignment Received" })
-        }).then(r => r.json()).then(response => {
-            console.log("Received after post: ", response)
-        })
-    </script>
-  </body>
+  </div>
+  <script>
+    console.log("Reached the code... sending fetch...")
+    fetch("https://dev--code-challenge-receipt.thompson-plyler.autocode.gg/", {
+      method: "post",
+      headers: {
+        "Content-Type": 'application/json',
+        "Accepts": 'application/json'
+      },
+      body: JSON.stringify({ title: "Test for Assignment", subject: "Christian Lirette's Assignment Received" })
+    }).then(r => r.json()).then(response => {
+      console.log("Received after post: ", response)
+    })
+  </script>
+</body>
+
 </html>
