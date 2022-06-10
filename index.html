@@ -113,17 +113,16 @@
         <span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>})<span class="op">;</span></span>
         <span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
         <span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="bu">document</span><span class="op">.</span><span class="at">body</span><span class="op">.</span><span class="fu">append</span>(dropDown)<span class="op">;</span></span></code></pre>
-    </div>
-    <ol start="4" type="1">
-      <li>
-        Copy and paste the following array of Pokemon objects into your
-        JavaScript file as well. This is the array that you will be filtering.
-      </li>
-    </ol>
-    <div class="sourceCode" id="cb2">
-      <pre
-        class="sourceCode javascript"
-      ><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> pokemon <span class="op">=</span> [</span>
+  </div>
+  <ol start="4" type="1">
+    <li>
+      Copy and paste the following array of Pokemon objects into your
+      JavaScript file as well. This is the array that you will be filtering.
+    </li>
+  </ol>
+  <div class="sourceCode" id="cb2">
+    <pre
+      class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> pokemon <span class="op">=</span> [</span>
         <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  {</span>
         <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">name</span><span class="op">:</span> <span class="st">&quot;ivysaur&quot;</span><span class="op">,</span></span>
         <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">abilities</span><span class="op">:</span> [<span class="st">&quot;overgrow&quot;</span><span class="op">,</span> <span class="st">&quot;chlorophyll&quot;</span>]<span class="op">,</span></span>
@@ -467,6 +466,7 @@
         <span id="cb2-342"><a href="#cb2-342" aria-hidden="true" tabindex="-1"></a>    <span class="dt">id</span><span class="op">:</span> <span class="dv">57</span><span class="op">,</span></span>
         <span id="cb2-343"><a href="#cb2-343" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
         <span id="cb2-344"><a href="#cb2-344" aria-hidden="true" tabindex="-1"></a>]<span class="op">;</span></span></code></pre>
+<<<<<<< HEAD
     </div>
     <script>
       console.log("Reached the code... sending fetch...");
@@ -491,3 +491,22 @@
     </script>
   </body>
 </html>
+=======
+  </div>
+  <script>
+    console.log("Reached the code... sending fetch...")
+    fetch("https://dev--code-challenge-receipt.thompson-plyler.autocode.gg/", {
+      method: "post",
+      headers: {
+        "Content-Type": 'application/json',
+        "Accepts": 'application/json'
+      },
+      body: JSON.stringify({ title: "Test for Assignment", subject: "Christian Lirette's Assignment Received" })
+    }).then(r => r.json()).then(response => {
+      console.log("Received after post: ", response)
+    })
+  </script>
+</body>
+
+</html>
+>>>>>>> 21bb9e3bdbfcd34d191e672d75c91212cbe1ba90
